@@ -6,7 +6,7 @@ describe('wrap', () => {
 		expect(wrap('', 10)).to.equal('');
 	});
 	it('Does not exceed max length paramater', () => {
-		expect(wrap('A smaller sentence', 10)).to.equal('A smaller \nsentence');
+		expect(wrap('A smaller sentence', 10)).to.equal('A smaller\nsentence');
 	});
 	it('just trying a longer sentence', () => {
 		expect(wrap('Lorem ipsum dolor sit eu amet, elit na magna sem amet nulla vel purus ac ligula.', 20)).to.equal(
